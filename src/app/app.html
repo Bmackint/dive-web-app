@@ -1,10 +1,17 @@
     <nz-layout>
       <nz-header>
-        <div class="logo"></div>
+
+          <!-- <div class="sidebar-logo">
+              <a href="https://ng.ant.design/" target="_blank">
+                <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+                <h1>Web Dive</h1>
+              </a>
+            </div> -->
         <ul nz-menu nzTheme="dark" nzMode="horizontal">
-          <li nz-menu-item>Navigation One</li>
-          <li nz-menu-item>Navigation Two</li>
-          <li nz-menu-item>Navigation Three</li>
+          <!--TODO: REMOVE/UPDATE-->
+          <li nz-menu-item style="float: left;">TODO: LOGO/name here</li>
+          <li nz-menu-item style="float: right;">Navigation Two</li>
+          <li nz-menu-item style="float: right;">Navigation Three</li>
         </ul>
       </nz-header>
       <nz-content>
@@ -19,6 +26,8 @@
             [(nzCollapsed)]="isCollapsed"
             [nzTrigger]="null"
           >
+
+
             <div class="sidebar-logo">
               <a href="https://ng.ant.design/" target="_blank">
                 <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
@@ -29,7 +38,7 @@
               <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
                 <ul>
                   <li nz-menu-item nzMatchRouter>
-                    <a routerLink="/welcome">Welcome</a>
+                    <a routerLink="/map">Map</a>
                   </li>
                   <li nz-menu-item nzMatchRouter>
                     <a>Monitor</a>
@@ -50,10 +59,12 @@
           </nz-sider>
           <nz-layout>
             <nz-header>
+
+              <!-- TODO: set breadcrumps with map zoom details -->
               <div class="app-header">
-                <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+                <!-- <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
                   <nz-icon class="trigger" [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'" />
-                </span>
+                </span> -->
               </div>
             </nz-header>
             <nz-content>
