@@ -26,7 +26,7 @@ export class DiveSiteService {
 
     getData(): Observable<any[]> {
         console.log("DiveSiteService - getData()")
-        return this.http.get<any[]>(this.apiUrl)
+        return this.http.get<any[]>(this.apiUrl + '/diveSites')
         .pipe(
             res => res
             //catchError(this.handleError)
