@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { DiveSiteService } from '../../shared/dive-site-service'
+import { DiveSiteService } from '../../../../shared/dive-site-service'
 import mapboxgl, { Map as MapboxMap } from 'mapbox-gl'
 
 

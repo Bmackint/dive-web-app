@@ -1,84 +1,55 @@
-    <nz-layout>
-      <nz-header>
 
-          <!-- <div class="sidebar-logo">
-              <a href="https://ng.ant.design/" target="_blank">
-                <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
-                <h1>Web Dive</h1>
-              </a>
-            </div> -->
-          <ul nz-menu nzTheme="dark" nzMode="horizontal">
-          <!--TODO: REMOVE/UPDATE-->
-          <li nz-menu-item style="float: left;">TODO: LOGO/name here</li>
-          <li nz-menu-item style="float: right;">
-            <!-- Navigation Two -->
-            <dive-search-input></dive-search-input>
-          </li>
-          <li nz-menu-item style="float: right;">Navigation Three</li>
-        </ul>
-      </nz-header>
-      <nz-content>
-        
-
-
-        <nz-layout class="app-layout">
-          <nz-sider class="menu-sidebar"
-            nzCollapsible
-            nzWidth="512px"
-            nzBreakpoint="md"
-            [(nzCollapsed)]="isCollapsed"
-            [nzTrigger]="null"
-          >
-
-
-            <div class="sidebar-logo">
-              <a href="https://ng.ant.design/" target="_blank">
-                <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
-                <h1>Web Dive</h1>
-              </a>
-            </div>
-            <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-              <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
-                <ul>
-                  <li nz-menu-item nzMatchRouter>
-                    <a routerLink="/map">Map</a>
-                  </li>
-                  <li nz-menu-item nzMatchRouter>
-                    <a>Monitor</a>
-                  </li>
-                  <li nz-menu-item nzMatchRouter>
-                    <a>Workplace</a>
-                  </li>
-                </ul>
-              </li>
-              <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
-                <ul>
-                  <li nz-menu-item nzMatchRouter>
-                    <a>Basic Form</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </nz-sider>
-          <nz-layout>
-            <nz-header>
-
-              <!-- TODO: set breadcrumps with map zoom details -->
-              <div class="app-header">
-                <!-- <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
-                  <nz-icon class="trigger" [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'" />
-                </span> -->
-              </div>
-            </nz-header>
-            <nz-content>
-              <div class="inner-content">
-                <router-outlet></router-outlet>
-              </div>
-            </nz-content>
-          </nz-layout>
-        </nz-layout>
-
-
-
-      </nz-content>
+<nz-layout class="app-layout">
+  <nz-header>
+    <div class="logo">
+      <a href="https://ng.ant.design/" target="_blank">
+        <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+      </a>
+    </div>
+    <h1>Web Dive</h1>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal">
+      <li nz-menu-item style="float: right;">Sign In</li>
+      <li nz-menu-item style="float: right;">Favourites</li>
+      <!-- <li nz-menu-item><dive-search-input></dive-search-input></li> -->
+    </ul>
+  </nz-header>
+  <nz-content>
+    <div class="inner-content">
+      <router-outlet></router-outlet>
+    </div>
+  </nz-content>
   </nz-layout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

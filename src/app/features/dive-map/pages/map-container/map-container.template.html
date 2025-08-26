@@ -1,0 +1,62 @@
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar"
+    nzCollapsible
+    nzWidth="512px"
+    nzBreakpoint="md"
+    [(nzCollapsed)]="isCollapsed"
+    [nzTrigger]="null"
+  >
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/map">Map</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Monitor</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Workplace</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a>Basic Form</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+
+      <!-- TODO: set breadcrumps with map zoom details -->
+      <div class="app-header">
+
+
+        <div nz-row [nzGutter]="16">
+          <!-- <div nz-col class="gutter-row" [nzSpan]="6"><div class="inner-box">col-6</div></div>
+          <div nz-col class="gutter-row" [nzSpan]="6"><div class="inner-box">col-6</div></div>
+          <div nz-col class="gutter-row" [nzSpan]="6"><div class="inner-box">col-6</div></div> -->
+          <div nz-col class="gutter-row float-right" [nzSpan]="6"><div class="inner-box"><dive-search-input></dive-search-input></div></div>
+        </div>
+        
+        <!-- <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+          <nz-icon class="trigger" [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'" />
+        </span> -->
+      </div>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <app-map></app-map>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
+
+
+
+
+
