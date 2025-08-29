@@ -1,0 +1,39 @@
+<!--TODO: card data loading animation ... see "card" documentation for effect-->
+<nz-layout>
+  <nz-layout>
+    <nz-sider>
+      <nz-card class="image-card">
+        [todo: image here]
+      </nz-card>
+    </nz-sider>
+    <nz-content>
+      <nz-card  nzTitle="Site Name" [nzExtra]="extraTemplate">
+        <h3>Description: </h3>
+        <p> test here</p>
+      </nz-card>
+      <ng-template #extraTemplate>
+        <a>View</a>
+      </ng-template>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
+
+
+
+<!-- <nz-flex nzGap="middle" nzVertical>
+  <nz-splitter (nzResize)="setSizes($event)">
+    <nz-splitter-panel [nzSize]="sizes()[0]" [nzResizable]="resizable()">
+      <div class="box">First</div>
+    </nz-splitter-panel>
+    <nz-splitter-panel [nzSize]="sizes()[1]">
+      <div class="box">Second</div>
+    </nz-splitter-panel>
+  </nz-splitter>
+  <nz-flex nzJustify="space-between">
+    <nz-switch nzCheckedChildren="Enabled" nzUnCheckedChildren="Disabled" [(ngModel)]="resizable"></nz-switch>
+    <button nz-button (click)="sizes.set(['50%', '50%'])">Reset</button>
+  </nz-flex>
+</nz-flex> -->
+
+
+

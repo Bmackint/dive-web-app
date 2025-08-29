@@ -5,7 +5,6 @@ import { Map } from '../map/map.component'
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
-import { DiveSearchComponent } from './../../dive-search-input.component'
 
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
@@ -13,9 +12,17 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { LocationsDataService } from './../../../../core/services/locations-data-.service'
 import { Subscription } from 'rxjs';
 
+//app
+import { SideBarContainer } from './../sidebar-container/sidebar-container.component'
+import { DiveSearchComponent } from '../../dive-search-input/dive-search-input.component'
+import { MapBreadCrumb } from '../../map-bread-crumb/map-bread-crumb.component'
+
 @Component({
   selector: 'app-map-container',
-  imports: [Map,NzIconModule, NzLayoutModule, NzMenuModule, DiveSearchComponent, NzGridModule, NzDividerModule],
+  imports: [Map, NzIconModule, NzLayoutModule, NzMenuModule,
+    DiveSearchComponent, NzGridModule, NzDividerModule, SideBarContainer,
+    MapBreadCrumb
+  ],
   templateUrl: './map-container.template.html',
   styleUrl: './map-container.css'
 })

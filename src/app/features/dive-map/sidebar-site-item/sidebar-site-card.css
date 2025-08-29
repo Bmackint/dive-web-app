@@ -1,0 +1,15 @@
+nz-card {
+    width: 100%;
+}
+
+.box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: 0 0 10px rgba(171, 179, 186, 0.1); */
+}
+
+.image-card {
+    height: 100%;
+}

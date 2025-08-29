@@ -8,8 +8,8 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 @Component({
     selector: 'dive-search-input',
     templateUrl: './dive-search-input.template.html',
+    styleUrl: './dive-search-input.css',
     imports: [NzInputModule, NzIconModule, NzButtonModule, NzDividerModule],
-   // styleUrls: ['./search-input.component.css']
 })
 export class DiveSearchComponent {
     searchValue: string = '';
